@@ -86,3 +86,47 @@ heros.forEach((obj,index) =>
 // Control Flow
 // ======================================
 
+// If . . . Else  (else if)
+const condition = true;
+
+if (!condition) {
+
+    console.log(condition);
+
+}  else if (condition) {
+
+    console.log("INSIDE ELSE IF: ");
+
+} else {
+
+    console.log("INSIDE ELSE: ");
+    
+}
+
+console.log("OUTSIDE: ");
+
+// Switch & Case
+const key = "WORLD";
+
+switch (key) {
+
+    case "HELLO": console.log("HELLO")
+        
+        break;
+
+    case "WORLD": console.log("WORLD")
+        
+        break;
+
+    default:
+        
+        break;
+
+}
+
+// condition ? result : result 
+const result_t = false ? "IM TRUE" : false ? "IM TRUE x 2" : "IM FALSE";
+
+console.log(result_t);
+
+
