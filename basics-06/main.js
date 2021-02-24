@@ -1,6 +1,6 @@
-console_title('Built In Objects');
 // Built In Objects
 // ======================================
+console_title('Built In Objects');
 var myStr = "Hello, my name is Deku"
 console.log(".lenth:", myStr.length) 
 // prints the length of the string: 22
@@ -13,9 +13,9 @@ console.log(".chartAt:", myStr.charAt(3))
 console.log(".indexOf:", myStr.indexOf("Deku")) 
 // prints: 19
 
-console_title('Object Literals');
 // Object Literals
 // ======================================
+console_title('Object Literals');
 let basic_obj = {
     name: "angel",
     age: 25,
@@ -27,26 +27,33 @@ console.log("Obj Literal Dot Notaion: ", basic_obj.name); // dot notations attri
 
 console.log("Obj Literal Brack Notation: ", basic_obj["name"]); // braket notation (variable key)
 
-console_title('Create Object');
 // Create Object
 // ======================================
+console_title('Create Object');
 var obj = new Object({
     hero: 'deku',
     class: 2,
     power: ['speed','power']
 })
 
-console.log("obj.hero:", obj.hero)
-// prints: Deku
+console.log("obj.hero:", obj.hero); // prints: Deku
 
-console_title('Reassign Attributes');
+
 // Reassign Attributes
 // ======================================
+console_title('Reassign Attributes');
 var deku = new Object({
     hero: 'deku',
     class: 2,
     powers: ['speed','power']
 })
+
+console.log("Obj Deku.class:", deku.class);
+
+deku.class = 3;
+
+console.log("Obj Deku.class:", deku.class);
+
 var flying = new Object({
     powers: [ ...deku.powers, 'flying']
 })
@@ -96,6 +103,12 @@ console.log(".getFullYear:", newDate.getFullYear())
 // prints: 2020
 console.log(".getFullYear:", newDate.getFullYear())
 // prints: 2020
+
+
+
+
+
+
 
 // Example Function Homwork
 // ======================================
