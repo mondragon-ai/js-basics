@@ -1,12 +1,12 @@
 // Creating Our First Obj
 // ======================================
 console_title('Create Object');
-const user = new Object()
+const user = new Object();
 
 // Add Attributes
-user.name = 'Deku'
-user.email = 'Deku@uahigh.jp'
-user.age = 16
+user.name = 'Deku';
+user.email = 'Deku@uahigh.jp';
+user.age = 16;
 console.log(user) 
 // prints: { name: 'Deku', email: 'Deku@uahigh.jp', age: 16 }
 
@@ -35,30 +35,32 @@ console.log(user_lit)
 // prints: { name: 'Deku', email: 'Deku@uahigh.jp', age: 16 }
 
 // Calling Values
-console.log(user_lit.name) 
+console.log("Name: ", user_lit.name) 
 // prints: 'Deku'
-console.log(user_lit.email) 
+console.log("Email: ",user_lit.email) 
 // prints: 'Deku@uahigh.jp'
-console.log(user_lit.age) 
+console.log("Age: ",user_lit.age) 
 // prints: 16
-console.log(user_lit.classRank) 
+console.log("Rank: ",user_lit.classRank) 
 // prints: undefined
 
 // Calling Values using [] Notation
 // console.log(user.name) 
 // prints: 'Deku'
-console.log(user_lit['name']) 
+console.log("['Name']: ", user_lit['name']) 
 // prints: 'Deku'
 
-const key = 'name'
-console.log(user_lit['key']) 
-// prints: 'Bakugo'
+const key = 'name';
+console.log("[key]: ",user_lit[key]);
+// prints: 'Deku'
 
 // Enumerating
 // ======================================
 console_title('Enumerating');
 function showProps(obj, objName) {
+
     var result = ``;
+
     for (var i in obj) {
       
       if (obj.hasOwnProperty(i)) {
@@ -73,7 +75,9 @@ const n_user = {
     email: 'Deku@uahigh.jp',
     age: 16
 }
-const heroProps = showProps(n_user, 'user')
+
+const heroProps = showProps(n_user, 'user');
+
 console.log(heroProps)
 
 // Assigning Methods
@@ -95,7 +99,7 @@ console_title('Assigning Methods');
 //     email: 'Deku@uahigh.jp',
 //     age: 16,
 //     greet: function() {
-//        console.log(`Hello, I am a hero and my name is ${name}`)
+//        console.log(`Hello, I am a hero and my name is ${name}`);
 //     }
 // }
 
@@ -117,7 +121,7 @@ const m_usr = {
     }
 }
 
-m_usr.greet()
+m_usr.greet();
 
 // Objects inside Objects
 // ======================================
@@ -137,6 +141,8 @@ console_title('Objects inside Objects');
 // }
 
 // console.log(o_usr.powers)
+
+// console.log(o_usr.powers.type)
 
 // Arrays In Objs (maps)
 const o_usr = {
@@ -164,6 +170,7 @@ console.log(o_usr.powers)
 // Peicing it All Together
 // ======================================
 console_title('Peicing it All Together');
+
 const hero_obj = {
     name: 'Todoroshi',
     email: 'Todoroshi@uahigh.jp',
@@ -184,6 +191,7 @@ const hero_obj = {
     }],
     logPowers() {
         console.log('These are my powers:')
+        
         this.powers.forEach(power => {
             console.log(`${power.name}`)
         })

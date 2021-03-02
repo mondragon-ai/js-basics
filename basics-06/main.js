@@ -1,7 +1,7 @@
 // Built In Objects
 // ======================================
 console_title('Built In Objects');
-var myStr = "Hello, my name is Deku"
+var myStr = "Hello, my name is Deku";
 console.log(".lenth:", myStr.length) 
 // prints the length of the string: 22
 console.log(".toUpperCase:", myStr.toUpperCase()) 
@@ -26,6 +26,10 @@ let basic_obj = {
 console.log("Obj Literal Dot Notaion: ", basic_obj.name); // dot notations attributes
 
 console.log("Obj Literal Brack Notation: ", basic_obj["name"]); // braket notation (variable key)
+
+console.log("Obj Literal hobbies[]: ", basic_obj.hobbies); 
+
+console.log("Obj Literal hobbies[1]: ", basic_obj.hobbies[1]); 
 
 // Create Object
 // ======================================
@@ -71,6 +75,7 @@ var deku = new Object({
     class: 2,
     powers: ['speed','power']
 })
+
 var flying = new Object({
     powers: [ ...deku.powers, 'flying']
 })
@@ -88,13 +93,15 @@ var deku = new Object({
     class: 2,
     powers: ['speed','power']
 })
+
 console.log("Object.entries:", Object.entries(deku))
 // prints: {["hero": 'deku'], ["class": 2], ["powers": ['speed','power', 'flying']]}
 
-console_title('Dot Notation');
+
 // Dot Notation
 // ======================================
-var newDate = new Date()
+console_title('Dot Notation w/ existing Obj Class: Date()');
+var newDate = new Date();
 console.log(".toLocaleDateString:", newDate.toLocaleDateString());
 // prints: 5/2/2020 12:15:16 PM
 console.log(".getHours:", newDate.getHours())
