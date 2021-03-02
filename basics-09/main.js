@@ -1,23 +1,26 @@
 // Try . . . Catch
 // ======================================
 console_title('Try . . . Catch');
-try {
-    alert("Welcome Hero!");
-  }
-  catch(err) {
-    console.log(err.message);
-  }
+try 
+{
+  alert("Welcome Hero!");
+}
+catch(err) 
+{
+  console.log(err.message);
+}
 
 // Throw
-var hero = 'bakugo'
+var hero = 'bakugo';
+
 try {
   if (hero == 'deku') { 
     console.log(`Hello, my name is ${hero}`)
   };
-  throw "Not Deku"
+  throw console.log("Not Deku");
 }
 catch(err) {
-  console.log(err.message);
+  console.log(err);
 }
 
 // Finally
@@ -26,7 +29,7 @@ try {
   if (hero == 'deku') { 
     console.log(`Hello, my name is ${hero}`)
   };
-  throw "Not Deku"
+  throw ""
 }
 catch(err) {
   console.log("Not Deku");
